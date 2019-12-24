@@ -132,7 +132,7 @@ venv.bak/
 .mypy_cache/
 
 # VS Code settings
-.vscode
+.venv/
 .vscode/
 
 # Mac
@@ -142,8 +142,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-.vscode/
 
 .zip
 
