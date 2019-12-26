@@ -21,3 +21,16 @@
 13. [FreeCodeCamp](https://learn.freecodecamp.org/)
 14. [The Scientific Python Project](https://scipy.org)
 15. [Pillow](https://pillow.readthedocs.io/en/stable/index.html)
+
+
+## Tasks
+1. Review code from "demo" folder.
+2. Study interesting examples and articles from geeksforgeeks web site.
+3. Refactor my algorithms' folder "aljuarismi". 
+4. Study book Mastering Algorithms with Python.
+5. Study the book "Clean Python".
+
+## Brain Storm: Ideas for python applications
+1. Web Sites. Django and Flask. AWS.
+2. Machine Learning, Neural Networks and Deep Learning.
+3. General purpose terminal applications.
