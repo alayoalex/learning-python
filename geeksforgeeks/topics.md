@@ -1,12 +1,12 @@
 # Basics
-Python language introduction
-Python 3 basics
++ Python language introduction
++ Python 3 basics
 Pyhon The new generation language
 Important difference between python 2.x and python 3.x with example
 - Keywords in Python | Set 1
 - Keywords in Python | Set 2
 Namespaces and Scope in Python
-Statement, Indentation and Comment in Python
++ Statement, Indentation and Comment in Python
 Structuring Python Programs
 How to check if a string is a valid keyword in Python?
 How to assign values to variables in Python and other languages
@@ -318,7 +318,7 @@ Optimization Tips for Python Code
 How to input multiple values in one line
 Command line and variable argument
 Python facts
-Why import star in Python is a bad idea
++ Why import star in Python is a bad idea
 Why is python best suited for Competitive Coding?
 Python trics for comptetive coding
 Tips and Tricks for Competitive Programmers | Set 2 (Language to be used for Competitive Programming)
@@ -326,7 +326,7 @@ Python for Data Science
 How to Call a C function in Python
 Selenium Python Tricks
 Text Analysis in Python 3
-Context Manager in Python
++ Context Manager in Python
 Code introspection in Python
 Permutation and combination
 Command line interface
@@ -357,9 +357,9 @@ Using CX_Freeze in Python
 Program to print its own name as output
 
 # Applications and Projects
-Python | Program to crawl a web page and get most frequent words
-Creating a proxy webserver | Set – 1
-Creating a proxy webserver | Set – 2
++ Python | Program to crawl a web page and get most frequent words
++ Creating a proxy webserver | Set – 1
++ Creating a proxy webserver | Set – 2
 Facebook login using python
 FB Chatting through python
 C/C++ code formating tool

@@ -39,4 +39,5 @@ print(obj.staticmethod())
 # if we only have the class object:
 print(MyClass.classmethod())
 print(MyClass.staticmethod())
-print(MyClass.method())
+print(MyClass.method())   #wrong
+print(MyClass.method(obj))   #righ
