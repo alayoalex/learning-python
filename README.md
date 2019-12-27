@@ -36,7 +36,8 @@
 
 ## Brain Storm: Ideas for python applications
 1. Web Sites. Django and Flask. AWS.
-   a. Web Applications with the bible's text.
+   a. Web applications with the bible's text.
+   b. Web applications with the neural networks solutions.
 
 2. Machine Learning, Neural Networks and Deep Learning.
    a. Neural Network to predict baseball player peerformance based in their traditional and advanced stats.
