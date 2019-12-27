@@ -1,14 +1,14 @@
-"""
-Naive algorithm to get the amount of corn to reward the creator
-of chess.
-"""
+"""Algorithms related with chess game."""
 
 import math
 import time
 
+"""
+Algorithm to get the amount of corn to reward the creator of chess.
+"""
 def chess_regard_iterative():
     """
-    The naive approach lead to and iterative solution.
+    The naive approach lead to an iterative solution.
     """
     total = 0
     for i in range(64):
@@ -23,6 +23,7 @@ def chess_regard_equation():
     """
     return 2**64 - 1
 
+# tests
 s1 = time.time()
 iterative = chess_regard_iterative()
 e1 = time.time()

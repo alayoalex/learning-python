@@ -1,5 +1,6 @@
 base_16_digits = {'A':10, 'B':11, 'C':12, 'D':13, 'E':14, 'F':15}
 
+
 def base_converter(n, base=2):
     """
     Constructing Base b Expansions from base 10.
@@ -36,14 +37,14 @@ def to_decimal_base(n, base):
 
     if base <= 10:
         for i in range(len(cadena_de_cifras)):
-            result += int(cadena_de_cifras[i])*(10**(len(cadena_de_cifras) - i))
+            result += int(cadena_de_cifras[i])*(10**(len(cadena_de_cifras)-i))
     elif base == 16:
         for i in range(len(cadena_de_cifras)):
             if cadena_de_cifras[i] in ['A', 'B', 'C', 'D', 'E', 'F']:
-                result += base_16_digits[cadena_de_cifras[i]*(10**(len(cadena_de_cifras) - i))    
-            else:
-                result += int(cadena_de_cifras[i])*(10**(len(cadena_de_cifras) - i))
-    else: return print("No esta implementada la funcionalidad para otras bases mayores que 10.")
+                result = result + base_16_digits[int(cadena_de_cifras[i])]*(10**(len(cadena_de_cifras)-i))
+            result = result + int(cadena_de_cifras[i])*(10**(len(cadena_de_cifras)-i))
+    else: 
+        return print("No esta implementada la funcionalidad para otras bases mayores que 10.")
     return result
 
 
@@ -62,15 +63,21 @@ def from_oct_to_bin(n):
         binaria += base_converter(i, 2)
     return binaria
         
-    
+
+# TODO
 def from_hex_to_bin(n):
     pass
 
+
+# TODO
 def from_bin_to_oct(n):
     pass
 
+
+# TODO
 def from_bin_to_hex(n):
     pass
 
 
+# Tests
 #print(base_converter(1023, base=2))

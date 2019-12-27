@@ -1,15 +1,15 @@
-import math
-import time
+import math, time
+
 
 def is_prime(n):
     """
     Valida si un número n es primo o no.
     """
-    primo = True
     for i in range(2, int(math.sqrt(n)) + 1):
         if n % i == 0:
             return False
     return True
+
 
 def list_primes(n):
     """
@@ -21,6 +21,7 @@ def list_primes(n):
         if is_prime(i):
             l.append(i)
     return l
+
 
 def list_primes_otro(n):
     """
@@ -38,6 +39,7 @@ def list_primes_otro(n):
         if primo:
             p.append(j)
     return p
+
 
 def list_primes_optimized(n):
     """
@@ -60,6 +62,7 @@ def list_primes_optimized(n):
             P += 1
     return p
 
+
 def list_primes_criba_eratostenes(n):
     """
     Criba de Eratostenes, algoritmos mucho más óptimo que los anteriores.
@@ -77,6 +80,7 @@ def list_primes_criba_eratostenes(n):
     return l
 
 
+# tests
 start = time.time()
 print(is_prime(67280421310721))
 end = time.time()
