@@ -24,23 +24,26 @@
 
 
 ## Tasks
-1. (doing) Review code from "demo" folder.
+1. (doing) Review code from "demos" folder.
 2. Study interesting examples and articles from geeksforgeeks web site.
 3. (done) Refactor my algorithms' folder "aljuarismi". 
-4. Study book Mastering Algorithms with Python.
+4. Study book "Mastering Algorithms with Python".
 5. Study the book "Clean Python".
 6. Study Flask.
 7. Review Manim.
-8. Review arxiv_sanity web site.
+8. Review Arxiv-Sanity web site.
+9. Study the book "Automate Boring Stuff with Python"
 
 
 ## Brain Storm: Ideas for python applications
 1. Web Sites. Django and Flask. AWS.
    a. Web applications with the bible's text.
    b. Web applications with the neural networks solutions.
+   c. Web app to manage chess tournaments.
 
 2. Machine Learning, Neural Networks and Deep Learning.
    a. Neural Network to predict baseball player peerformance based in their traditional and advanced stats.
 
 3. General purpose terminal applications.
    a. App or script to reproduce a bible promise when computer starts. It can be done reproducin and chunk of andio or with a speaker reading automatically a text.
+   b. Aplicacion para insertar subtitulo en un video.
