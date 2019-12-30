@@ -1,7 +1,9 @@
 from __future__ import print_function
 from PIL import Image
+import os
 
-im = Image.open("image_processing/_MG_5192.jpg")
+
+im = Image.open("my-examples/image_processing/resources/modelo0.jpg")
 print(im.format, im.size, im.mode)
 
 # split the image into individual bands
