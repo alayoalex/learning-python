@@ -33,7 +33,7 @@
 7. Review Manim.
 8. Review Arxiv-Sanity web site.
 9. (doing) Study the book "Automate Boring Stuff with Python"
-10. Begin to code something, whatever.
+10. (doing) Begin to code something, whatever.
 
 
 ### Brain Storm: Ideas for python applications
@@ -55,7 +55,7 @@
    * App or script to reproduce a bible promise when computer starts. It can be done reproducing a chunk of andio or with a speaker reading automatically a text.
    * App para reproducir automáticamente predicas de predicadores específicos.
    * Aplicacion para insertar subtitulo en un video.
-   * Contact Book. (good)
+   * (doing) Contact Book. (good)
    * File Connectivity Checker.
    * Bulk File Rename Tool. (good)
    * Directory Tree Generator. (good)
