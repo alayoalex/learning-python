@@ -1,5 +1,6 @@
 import contact
 import sys, argparse
+import operations
 
 
 def parse_cli():
@@ -30,12 +31,14 @@ def parse_cli():
             action="store_true",
             help="Automatically save the conctact data."
         )
-        parser.add_argument(
+        update_parser = parser.add_mutually_exclusive_group()
+        update_parser.add_argument(
             "-u",
             action="store_true",
             help="Automatically update the conctact data."
         )
-        parser.add_argument(
+        delete_parser = parser.add_mutually_exclusive_group()
+        delete_parser.add_argument(
             "-d",
             action="store_true",
             help="Automatically delete the data of a given contact or a given contact."
@@ -62,11 +65,12 @@ def parse_cli():
         sys.exit(2)
 
 
-def save_contact():
+def main():
     args = parse_cli()
-    c = contact.Contact(args.name, args.phone, args.address, args.email)
-    print(args.s)
+    if (args.s):
+        data = [args.name, args.phone, args.address, args.email]
+        operations.save(*data)
 
-
+    
 if __name__ == "__main__":
-    save_contact()
+    main()
