@@ -2,22 +2,21 @@
 
 #### Contact’s details
 * name
-* address
-* phone number
-* email address
+* address (add1, add2, add3)
+* phone number (mobile1, mobile2, fijo, casa, trabajo)
+* email address (email1, email2, email2)
 
 
 #### Funcionalities
 * save
 * update
 * delete
-* list
+* list (contacts using different parameters, such as alphabetical order or contact creation date)
 * sort
-* get
-* Allow users to list contacts using different parameters, such as alphabetical order or contact creation date.
-* Export to excel or csv.
-* Backup the database to an online storage platform. To do this, you can upload the database files to the cloud at certain intervals. You can also add a command that allows users to backup the database themselves.
-* you may need some form of identification, so the contact book can tell which database file belongs to which user. Implementing a user authentication feature is one way to go about it.
+* get (retrieve data contact using differents parameters)
+  export to excel or csv.
+* backup (backup the database to an online storage platform. To do this, you can upload the database files to the cloud at certain intervals. You can also add a command that allows users to backup the database themselves)
+* loging (you may need some form of identification, so the contact book can tell which database file belongs to which user. Implementing a user authentication feature is one way to go about it)
 
 
 #### Tasks
@@ -32,6 +31,6 @@
 4. Persistency may be SQLite, plain text, json
 
 
-#### Modules
-* Python sqlite3 module
-* argparse
+#### Modules to study
+* sqlite3 (Python Standar Library, Oficial Python Documentation)
+* argparse (Python Standar Library, Oficial Python Documentation)

@@ -67,9 +67,15 @@ def parse_cli():
 
 def main():
     args = parse_cli()
-    if (args.s):
+    if args.s:
         data = [args.name, args.phone, args.address, args.email]
         operations.save(*data)
+    elif args.l:
+        results = operations.listing()
+        for i in results:
+            for j in i:
+                print(j, end=" "*5)
+            print()
 
     
 if __name__ == "__main__":
