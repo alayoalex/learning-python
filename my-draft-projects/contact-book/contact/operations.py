@@ -2,21 +2,7 @@ import os
 import sqlite3
 
 
-"""def counter():
-    if not os.path.exists("data/counter.txt"):
-        count = open("data/counter.txt", 'w')
-        count.write(str(1))
-        count.close()
-    else:
-        count = open("data/counter.txt", 'r')
-        c = int(count.read())
-        c += 1
-        countmore = open("data/counter.txt", 'w')
-        countmore.write(str(c))
-        return c
-"""        
-
-def save(*data):
+def save(data):
     conn = sqlite3.connect("data/database.db")
     # Create a table    
     c = conn.cursor()
