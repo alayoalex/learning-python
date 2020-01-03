@@ -30,8 +30,17 @@ def listing():
     return c.fetchall() 
 
 
-def get(parameter_list):
-    pass
+def get_by_name(parameter):
+    conn = sqlite3.connect("data/database.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM contacto WHERE name=?', parameter)
+    return c.fetchall() 
+
+def get_by_mobile(parameter):
+    conn = sqlite3.connect("data/database.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM contacto WHERE phone=?', parameter)
+    return c.fetchall() 
 
 
 def sorting(self, parameter_list):

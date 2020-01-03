@@ -69,10 +69,15 @@ def parse_cli():
 def main():
     args = parse_cli()
     if args.s:
-        data = args.data
-        operations.save(data)
+        operations.save(args.data)
     if args.l:
         results = operations.listing()
+        for i in results:
+            for j in i:
+                print(j, end=" "*5)
+            print()
+    if args.g:
+        results = operations.get_by_mobile(args.data)
         for i in results:
             for j in i:
                 print(j, end=" "*5)
