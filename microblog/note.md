@@ -1,1 +1,3 @@
-## Flask example.
+## Flask example
+
+set FLASK_APP=microblog.py

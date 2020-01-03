@@ -7,7 +7,6 @@ Working on projects can be difficult. That’s one reason why motivation and int
 If you’re interested in a project, you’ll be able to put in the time to research as well as find libraries and tools that will help you with the project.
 
 ### Here are some tips:
-
 1. Find a source of motivation
 2. Break the project into subtasks
 3. Do research on the subtasks
