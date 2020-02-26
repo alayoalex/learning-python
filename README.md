@@ -49,7 +49,7 @@ Web Sites. Django and Flask. AWS.
 9. [ ] Quiz Application. 
 
 #### Machine Learning, Neural Networks and Deep Learning.
-1. [ ] Neural Network to predict baseball player peerformance based in their traditional and advanced stats.
+1. [ ] Neural Network to predict baseball player performance based in their traditional and advanced stats.
 
 #### General purpose terminal applications.
 1. [ ] App or script to reproduce a bible promise when computer starts. It can be done reproducing a chunk of andio or with a speaker reading automatically a text.
