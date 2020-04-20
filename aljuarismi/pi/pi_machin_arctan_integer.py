@@ -30,6 +30,7 @@ def arctan(x, one=1000000):
         total += delta
     return total
 
+
 def arctan_euler(x, one=1000000):
     """
     Calculate arctan(1/x) using euler's accelerated formula
@@ -58,8 +59,10 @@ def arctan_euler(x, one=1000000):
         two_n += 2
     return total
 
+
 def pi_machin(one):
     return 4*(4*arctan(5, one) - arctan(239, one))
+
 def pi_machin_euler(one):
     return 4*(4*arctan_euler(5, one) - arctan_euler(239, one))
 
@@ -71,8 +74,10 @@ def pi_hutton(one):
 
 def pi_gauss(one):
     return 4*(12*arctan(18, one) + 8*arctan(57, one) - 5*arctan(239, one))
+
 def pi_gauss_euler(one):
     return 4*(12*arctan_euler(18, one) + 8*arctan_euler(57, one) - 5*arctan_euler(239, one))
+
 
 if __name__ == "__main__":
     for log10_digits in range(1,7):
@@ -98,6 +103,7 @@ if __name__ == "__main__":
         pi = pi_gauss_euler(one)
         #print(pi)
         print("gauss euler: digits",digits,"time",time()-start)
+
     #print(pi_ferguson(one))
     #print(pi_hutton(one))
     #print(pi_gauss(one))

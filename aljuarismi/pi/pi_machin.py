@@ -78,7 +78,6 @@ def pi_gauss(one):
     return 4*(12*arctan(18, one) + 8*arctan(57, one) - 5*arctan(239, one))
 
 
-
 if __name__ == "__main__":
     print(pi_machin(10**100))
 
