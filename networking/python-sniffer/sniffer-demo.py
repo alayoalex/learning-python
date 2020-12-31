@@ -23,10 +23,13 @@ def main():
 
         # 8 for IPv4
         if eth_proto == 8:
-            (version, header_length, ttl, proto, src, target, data) = ipv4_packet(data)
+            version, header_length, ttl, proto, src, target, data = ipv4_packet(data)
             print(TAB_1 + 'IPv4 Packet:')
             print(TAB_2 + 'Version: {}, Header Length: {}, TTL: {}'. format(version, header_length, ttl))
             print(TAB_2 + 'Protocol: {}, Source: {}, Target: {}'. format(proto, src, target))
+            print(TAB_2 + 'Data:')
+            print(format_multi_line(DATA_TAB_3, data))
+            persist_address(src, target)
 
             # ICMP Packet
             if proto == 1:
@@ -44,13 +47,15 @@ def main():
                 print(TAB_2 + 'URG:{}, ACK: {}, PSH: {}, RST: {}, SYN: {}, FIN: {}'.format(flag_urg, flag_ack, flag_psh, flag_rst, flag_syn, flag_fin))
                 print(TAB_2 + 'Data:')
                 print(format_multi_line(DATA_TAB_3, data))
+                print(len(data))
 
             # UDP
             elif proto == 17:
                 src_port, dest_port, length, data = udp_segment(data)
                 print(TAB_1 + 'UDP Segment')
                 print(TAB_2 + 'Source Port: {}, Destination Port: {}, Length: {}'.format(src_port, dest_port, length))
-
+                print(TAB_2 + 'Data:')
+                print(format_multi_line(DATA_TAB_3, data))
 
             # Other
             else:
@@ -117,5 +122,10 @@ def format_multi_line(prefix, string, size=80):
             size -= 1
     return '\n'.join([prefix + line for line in textwrap.wrap(string, size)])
 
+
+def persist_address(source, targe):
+    with open('addresses.txt', 'a') as file:
+        file.write('{}  ==>  {} \n'.format(source, targe))
+        file.close()
 
 main()

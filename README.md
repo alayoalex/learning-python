@@ -2,7 +2,7 @@
 
 ## Learning to code in **python** programming language
 
-### Some web site and resources to learn to code at python
+### Some web sites and resources to learn to code at python
 1. [Python Software Fundation](https://www.python.org/)
 1. [Wiki](https://wiki.python.org/moin/FrontPage)
 2. [Real Python](http://realpython.com)
